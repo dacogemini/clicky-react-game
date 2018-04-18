@@ -39,7 +39,6 @@ class App extends Component {
          
         </p>
       <Wrapper>
-        <Title>Friends List</Title>
         {this.state.friends.map(friend => (
           <FriendCard
             removeFriend={this.removeFriend}
@@ -47,8 +46,8 @@ class App extends Component {
             key={friend.id}
             name={friend.name}
             image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
+            age={friend.age}
+            personality={friend.personality}
           />
         ))}
       </Wrapper>
