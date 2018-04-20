@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import logo from './Gravity_Falls_logo.png';
 import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
 import friends from "./friends.json";
-
+import Header from './components/Header';
 import './App.css';
 
 //
@@ -16,38 +15,68 @@ import './App.css';
 //
 
 class App extends Component {
+
   state = {
-    friends
+    status: "Click an Image to begin!",
+    friends:friends,
+    clickedIds: [],
+    score: 0,
+    topScore: 0,
   };
 
-  removeFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
-  };
+  componentDidMount () {
 
+  }
+// Shuffle array
+shuffleCardArray = id => {
+  let clickedIds = this.state.clickedIds;
+  for(var i = friends.length - 1; i > 0; i--) {
+    var q = Math.floor(Math.random() * (i + 1));
+    [friends[i], friends[q]] = [friends[q], friends[i]];
+  }
+  // if statement for if user clicks the same id - Game Over
+  if(clickedIds.includes(id)){
+    this.setState({
+      status: 'Incorrect! Click an Image to Play Again',      
+      friends:friends,
+      clickedIds: [], 
+      topScore: this.state.score > this.state.topScore ? this.state.score : this.state.topScore,
+      score: 0,       
+    });
+    
+      console.log('Game Over!');
+    // return;
+  } else {
+    // otherwise push the id the user clicked to the clickedIds array
+     clickedIds.push(id);
+     this.shuffleCardArray(friends);
+     
+  }
 
+  // if the user clicks nine images in a row - User Wins
+if(clickedIds === 9){
+  this.setState({friends: friends, score: this.state.score + 1, status: 'Congratulations! You Won!! Click an Image to Play Again'});
+  console.log('You Win!');  
+  console.log('Your score is: ' + clickedIds.length);
+}
+}
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title"></h1>
+          <Header count = {this.state.score} topScore = {this.state.topScore}/>
         </header>
         <p className="App-intro">
          
         </p>
-      <Wrapper>
-        {this.state.friends.map(friend => (
+        <Wrapper>
+        {this.state.friends.map((friends, i) => (
           <FriendCard
-            removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            age={friend.age}
-            personality={friend.personality}
+            onClickHandler={this.onClickHandler}
+            id={friends.id}
+            key={friends.id}
+            image={friends.image}
           />
         ))}
       </Wrapper>

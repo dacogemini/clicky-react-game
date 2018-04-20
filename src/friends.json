@@ -2,86 +2,47 @@
     {
       "id": 1,
       "name": "Mason 'Dipper' Pines ",
-      "image": "https://lh3.googleusercontent.com/Txs1-Wk2gNdD7g6R9gyh38elGnkx-LMUxf8P39j2yWVD9GA7sjvja53Jd25NDszZ30VyqcDbvfUooKdxZgNT5-XnS4jvXVljVlVBu0PeVlUtqxNwgRT1dTNgbvC4Ze53wxIkP2aKVQ=w2400",
-      "age": 12,
-      "personality": "Adventurous"
+      "image": "https://lh3.googleusercontent.com/Txs1-Wk2gNdD7g6R9gyh38elGnkx-LMUxf8P39j2yWVD9GA7sjvja53Jd25NDszZ30VyqcDbvfUooKdxZgNT5-XnS4jvXVljVlVBu0PeVlUtqxNwgRT1dTNgbvC4Ze53wxIkP2aKVQ=w2400"
     },
     {
       "id": 2,
       "name": "Mabel Pines",
-      "image": "https://lh3.googleusercontent.com/B3-klDhUcTy4AfprjTh4CbLvOJWxPfJPmY21qnEavIlu7fChBH9hWbDhTK3IrVCmKguJvLCqJ846vXSyMbynfHDGKJGnF73U5Jpu4LH8jkPSNdLhoOJUa_cwIeIS-N1scGWoE2BZgA=w2400",
-      "age": "12 (5 min. younger than Dipper)",
-      "personality": "Eccentric"
+      "image": "https://lh3.googleusercontent.com/B3-klDhUcTy4AfprjTh4CbLvOJWxPfJPmY21qnEavIlu7fChBH9hWbDhTK3IrVCmKguJvLCqJ846vXSyMbynfHDGKJGnF73U5Jpu4LH8jkPSNdLhoOJUa_cwIeIS-N1scGWoE2BZgA=w2400"
     },
     {
       "id": 3,
       "name": "Gideon Charles Gleeful",
-      "image": "https://lh3.googleusercontent.com/rGuSYi9x70qwZD_04bfJT6OitoXcFc0u8GrV0BMGbDKnKuwnNRwaTkjMCnMkwpf9v_ytPin5VETJ842KIQ0mmQrkznoTibQJwAscvyGW04dOoEDEK2kxvwa3DEuEkkP-MiHNqo4XqA=w2400",
-      "age": 10,
-      "personality": "Conniving"
+      "image": "https://lh3.googleusercontent.com/rGuSYi9x70qwZD_04bfJT6OitoXcFc0u8GrV0BMGbDKnKuwnNRwaTkjMCnMkwpf9v_ytPin5VETJ842KIQ0mmQrkznoTibQJwAscvyGW04dOoEDEK2kxvwa3DEuEkkP-MiHNqo4XqA=w2400"
     },
     {
       "id": 4,
       "name": "Grunkle Stan",
-      "image": "https://lh3.googleusercontent.com/WIMgLFNnOzlEFQYoZ_8NDQjXHYx_tPjwIVQ-3an2jCDQ_YxdRZta-pA_M0vJbbZFNCkVRVoEHTZNgH018pN_IvPczO6WHq1UpODGfMARFTtr305xCMjkcAqHV7FJSCXNt-2pPLO3xw=w2400",
-      "age": 67,
-      "personality": "Abrasive"
+      "image": "https://lh3.googleusercontent.com/WIMgLFNnOzlEFQYoZ_8NDQjXHYx_tPjwIVQ-3an2jCDQ_YxdRZta-pA_M0vJbbZFNCkVRVoEHTZNgH018pN_IvPczO6WHq1UpODGfMARFTtr305xCMjkcAqHV7FJSCXNt-2pPLO3xw=w2400"
     },
     {
       "id": 5,
       "name": "Soos Ramirez",
-      "image": "https://lh3.googleusercontent.com/aC9XYfSNKt4F_Vu_4KpGTK3h8tIvFcfsE318hyrSi_gt_XBLrvFxIF1t_75oGTzZppA3YrruY_eycWf9mJmwjpfF3ltzdkeJZodP40OEuU_zB349rwQuaC9EnOZyKM1g4Y7gCfTcMw=w2400",
-      "age": 22,
-      "personality": "Loveable"
+      "image": "https://lh3.googleusercontent.com/aC9XYfSNKt4F_Vu_4KpGTK3h8tIvFcfsE318hyrSi_gt_XBLrvFxIF1t_75oGTzZppA3YrruY_eycWf9mJmwjpfF3ltzdkeJZodP40OEuU_zB349rwQuaC9EnOZyKM1g4Y7gCfTcMw=w2400"
     },
     {
       "id": 6,
-      "name": "Doug Funnie",
-      "image": "https://vignette1.wikia.nocookie.net/doug/images/3/3b/Doug001.gif/revision/latest?cb=20110807170511",
-      "age": "Student",
-      "personality": "Bluffington"
+      "name": "Wendy",
+      "image": "https://lh3.googleusercontent.com/ebwJg7UB8Q-aQritlrUF0Ay6jpsAHO9lpu2_KxMvu7cbgfFVqMVzzqNPL8FEIBvi7cC2fsVUeYyJCcENdENN8L9ekdISjtBJEakw2S5l5NsAW3EDXW8cIYxKSdLlOkJWM1DTtL7vjQ=w2400"
     },
     {
       "id": 7,
-      "name": "Bugs Bunny",
-      "image": "https://vignette2.wikia.nocookie.net/deathbattlefanon/images/2/2b/Bugs_Bunny.png/revision/latest?cb=20151206010607",
-      "age": "Looney Toon",
-      "personality": "A Rabbit Burrow"
+      "name": "Candy Chiu",
+      "image": "https://lh3.googleusercontent.com/ByX-kmcE9Z1D5W3mg31N4HfRbkzU92BFzdIH1IxI7Cp8X-r1moEy0y2zpzL7pv3ebL2ucqospHIDf-g4hPkUcptuByeDsO_Qq7feMwsXn08MWOvfw6vaKSO8Zmwsf7ZIRY28XzUsCg=w2400"
     },
     {
       "id": 8,
-      "name": "Johnny Bravo",
-      "image": "http://vignette3.wikia.nocookie.net/p__/images/9/9a/Johnny_Bravo.png/revision/latest?cb=20131031233339&path-prefix=protagonist",
-      "age": "Ladies Man",
-      "personality": "Aron City"
+      "name": "Sheriff Blubs",
+      "image": "https://lh3.googleusercontent.com/3D2ZXoGt7KWePbgo3oJ49cxrWJFvDGylUwj5OFVaT-W0vvMHLBw8jKmn81qGkn3mrS6hd1h8pfoiMF8yrQM12Hk8lpa1to1_vqJVwhVqWxdD1rabO-uAW5BL5l58CMKUEzAPyJ-UJw=w2400"
     },
     {
       "id": 9,
-      "name": "Tommy Pickles",
-      "image": "https://vignette4.wikia.nocookie.net/uncyclopedia/images/e/e4/Tommy_Pickles.png/revision/latest?cb=20110530102641",
-      "age": "Adventurer",
-      "personality": "California"
-    },
-    {
-      "id": 10,
-      "name": "Rocko",
-      "image": "http://vignette3.wikia.nocookie.net/rockosmodernlife/images/9/9e/Rockos-modern-life-4e582a8f06a41.png/revision/latest?cb=20130522173416",
-      "age": "Cashier",
-      "personality": "O-Town, California"
-    },
-    {
-      "id": 11,
-      "name": "Captain Planet",
-      "image": "http://vignette2.wikia.nocookie.net/dragon-rap-battles/images/b/b6/Captain_Planet.png/revision/latest?cb=20160911200836",
-      "age": "Superhero",
-      "personality": "Earth"
-    },
-    {
-      "id": 12,
-      "name": "Ickis",
-      "image": "http://static.tvtropes.org/pmwiki/pub/images/ickis.png",
-      "age": "Ahhhh! A Real Monster!",
-      "personality": "Under a City Dump"
+      "name": "Robbie Vanentino",
+      "image": "https://lh3.googleusercontent.com/SLvXUQylF-UhIE6L4_vz3yDnqfYDs-AKKzpfcugRPFBCVSR5H-6FDjsLkr4KFPVVaVFG3Dj3dQ80tTXtnXsb_1rhGYklKz6nEiXo-w411KFsJbBL9_axZezF90xq2WQYY0boAuQsAA=w2400"
     }
   ]
   
