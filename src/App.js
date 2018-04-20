@@ -17,70 +17,62 @@ import './App.css';
 class App extends Component {
 
   state = {
-    status: "Click an Image to begin!",
-    friends:friends,
+    status: "",
+    friends,
     clickedIds: [],
     score: 0,
     topScore: 0,
   };
 
   componentDidMount () {
-
+    this.shuffleCardArray(friends);
   }
 // Shuffle array
 shuffleCardArray = id => {
+  console.log('click');
   let clickedIds = this.state.clickedIds;
-  for(var i = friends.length - 1; i > 0; i--) {
-    var q = Math.floor(Math.random() * (i + 1));
-    [friends[i], friends[q]] = [friends[q], friends[i]];
-  }
-  // if statement for if user clicks the same id - Game Over
+  // iIf user clicks the same id the game is over 
   if(clickedIds.includes(id)){
     this.setState({
-      status: 'Incorrect! Click an Image to Play Again',      
-      friends:friends,
-      clickedIds: [], 
-      topScore: this.state.score > this.state.topScore ? this.state.score : this.state.topScore,
-      score: 0,       
+      clickedIds: [],
+      score: 0, 
+      status: 'Incorrect - Game Over! Click an Image to Play Again',      
     });
-    
-      console.log('Game Over!');
-    // return;
+    console.log("Gamve Over!");
   } else {
-    // otherwise push the id the user clicked to the clickedIds array
-     clickedIds.push(id);
-     this.shuffleCardArray(friends);
-     
+    clickedIds.push(id);
+    if(clickedIds === 9){
+      this.setState({
+        clickedIds: [], 
+        score: 0, 
+        status: 'Congratulations! You Win!! Click an Image to Play Again'
+      });
+      console.log('You Win!');  
+      // return;
   }
-
-  // if the user clicks nine images in a row - User Wins
-if(clickedIds === 9){
-  this.setState({friends: friends, score: this.state.score + 1, status: 'Congratulations! You Won!! Click an Image to Play Again'});
-  console.log('You Win!');  
-  console.log('Your score is: ' + clickedIds.length);
+  this.setState({friends, clickedIds, score: clickedIds.length, topScore: this.state.score > this.state.topScore ? this.state.score : this.state.topScore, status:" "})
+  }
+  for(let p = friends.length - 1; p > 0; p--) {
+    let q = Math.floor(Math.random() * (p + 1));
+    // ES6
+    [friends[p], friends[q]] = [friends[q], friends[p]];
+  }
 }
-}
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <Header count = {this.state.score} topScore = {this.state.topScore}/>
-        </header>
-        <p className="App-intro">
-         
-        </p>
-        <Wrapper>
-        {this.state.friends.map((friends, i) => (
-          <FriendCard
-            onClickHandler={this.onClickHandler}
-            id={friends.id}
-            key={friends.id}
-            image={friends.image}
-          />
-        ))}
-      </Wrapper>
-
+render () {
+  return (
+    <div className="gameContainer">
+    <Header score = {this.state.score} topScore = {this.state.topScore} status = {this.state.status}/>
+    <img src={logo} className="App-logo" alt="logo" />
+    <Wrapper>
+      {this.state.friends.map((friends, i) => (
+        <FriendCard
+          shuffleCardArray={this.shuffleCardArray}
+          id={friends.id}
+          key={friends.id}
+          image={friends.image}
+        />
+      ))}
+    </Wrapper>
       </div>
     );
   }

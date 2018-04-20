@@ -7,7 +7,7 @@ const FriendCard = props => (
          <img className="clickImage" 
             alt={props.name} 
             src={props.image} 
-            onClick={() => props.onClickHandler(props.id)} />
+            onClick={() => props.shuffleCardArray(props.id)} />
     </div>
   </div>
 );
